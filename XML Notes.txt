@@ -1,0 +1,34 @@
+
+
+* XML starting STANDARD opening: <?xml version=“1.0”?>
+* Processing instructions and comments are the only 
+	XML tags that are not closed.
+* <someTag anAttribute=“someValue”>payload text</someTag>
+	-where the payload may be one or more child elements 
+		or simply text or both.
+* Comment writing : <!-- a comment -->
+* Two ways of closing the tags
+		<myTag someAttrib=“value”>…</myTag>
+		<myTag someAttrib=“value”/>
+* A CDATA section has the syntax:  <![CDATA[ … ]]> stays in payload text section
+		-no binary data in CDATA section as ambuguity is der with "]]" 
+			which is the closing of CDATA.
+
+*WELL formed XML
+
+*An XML document is well-formed XML if it  contains:
+	-A prolog:  <?xml version=“1.0”?>
+	-An optional link to an XSLT stylesheet
+	-An optional reference to a DTD or schema, used for validation
+	-Optional processing instructions
+	-Optional comments
+	-A body with a single root, which may contain any number of text sections, elements, and comments
+	-An optional epilogue consisting of comments and processing instructions
+*Processiong Instruction
+
+- Processing instructions are used to capture information for XML parsers and proprietary applications.
+  * Syntax: <? PI-target *[attrib=“value”]?>
+  * <?xml version=“1.0” encoding="utf-8"?>   --most common
+
+
+
